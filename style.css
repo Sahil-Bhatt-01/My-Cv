@@ -337,7 +337,7 @@ body {
 
 .work-card img {
   width: 180px;
-  height: auto
+  height: auto;
   object-fit: cover;
   border-radius: 6px;
   flex-shrink: 0;
