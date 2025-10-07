@@ -7,8 +7,9 @@
   font-optical-sizing: auto;
 }
 
-/* header section */
-/* General Styling */
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: Arial, sans-serif;
 }
@@ -22,19 +23,12 @@ body {
   margin-left: 205px;
 }
 
-.logo {
-  font-weight: bold;
-  font-size: 20px;
-}
+
 
 .menu {
   list-style: none;
   display: flex;
   gap: 20px;
-}
-
-.menu li {
-  position: relative;
 }
 
 .menu a {
@@ -48,22 +42,8 @@ body {
   color: #f44336;
 }
 
-/* Dropdown Styling */
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: white;
-  border: 1px solid #ccc;
-  min-width: 150px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* z-index: 1000; */
-}
 
-.dropdown-menu li {
-  border-bottom: 1px solid #eee;
-}
+
 
 .dropdown li {
   padding: 10px;
@@ -400,10 +380,13 @@ body {
 
 
 /* contact items */
-.me{
-   width: 500px;
+ .me{
  margin: 0 auto;
+ margin-bottom: 90px;
+   display: flex;
+  justify-content: center;
 }
+
 .contact{
   background: #f0f8fb;
   padding: 30px;
@@ -415,6 +398,9 @@ body {
 .contact h2{
     margin-bottom: 20px;
     font-weight: normal;
+    text-align: center;
+    font-weight: 800;
+    
 }
 .contact-item {
     display: flex;
@@ -437,6 +423,10 @@ body {
     margin: 5px 0 0 0;
     font-size: 14px;
     line-height: 1.4;
+}
+.details a{
+   text-decoration: none;
+  
 }
 
 /* Responsive styles */
@@ -481,7 +471,43 @@ body {
     .icon {
         margin-bottom: 10px;
     }
-}         
+} 
+
+#scrollToTopBtn {
+
+  background-color: #f44336; 
+  color:black; 
+  border: none;
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1;
+  position: fixed;
+   bottom: 30px; 
+   right: 30px; 
+  position: fixed;
+  opacity: 0.8;
+  display: none;
+
+}
+
+
+#scrollToTopBtn:hover {
+  opacity: 1;
+}
+
+footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+}
 
 
 
