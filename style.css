@@ -146,7 +146,7 @@ body {
   margin-bottom: 30px;
 }
 
-.btn {
+Button {
   background: #ff6b6b;
   color: #fff;
   padding: 12px 22px;
@@ -487,7 +487,6 @@ body {
   position: fixed;
    bottom: 30px; 
    right: 30px; 
-  position: fixed;
   opacity: 0.8;
   display: none;
 
