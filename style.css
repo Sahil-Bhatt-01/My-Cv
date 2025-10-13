@@ -31,7 +31,7 @@ body {
     }
 
     .navbar ul li a {
-      color: black;
+      color: white;
       text-decoration: none;
       font-size: 17px;
       transition: color 0.3s;
@@ -86,8 +86,115 @@ body {
     }
 
 
+.nav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 13px 215px;
+    padding: 20px 20px;
+}
+.nav > ul{
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    text-decoration: none;
+    list-style: none;
+}
+.nav >ul>li>a{
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+    font-weight: 500;
+}
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #111;
+  color: #fff;
+}
 
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #00bcd4;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 25px;
+  height: 20px;
+  justify-content: space-between;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 3px;
+  background: #fff;
+  border-radius: 3px;
+  transition: all 0.4s ease;
+}
+
+/* ===== Hamburger Animation to X ===== */
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    background: #111;
+    flex-direction: column;
+    width: 200px;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 8px;
+  }
+
+  .nav-links.active {
+    right: 0px;
+        background: black;
+    width: 300px;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+}
 /* hero section */
 .container {
   max-width: 900px;
@@ -114,6 +221,7 @@ body {
   color: #555;
   line-height: 1.5;
   margin-bottom: 30px;
+  text-align: justify;
 }
 
 Button {
@@ -127,9 +235,13 @@ Button {
   
 }
 
-.btn:hover {
-  background: #e85a5a;
+.btn{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    padding: 10px 10px;
 }
+
 
 .image-section img {
   width: 180px;
@@ -277,8 +389,6 @@ Button {
     font-size: 15px;
   }
 }
-
-
 
 /* featured work */
 .featured-works {

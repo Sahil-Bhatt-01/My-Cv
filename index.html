@@ -17,13 +17,29 @@
 <body>
 
 
-  <nav class="navbar">
-    <ul id="menu">
+  <!-- <div class="nav">
+    <ul>
       <li><a href="#skill">Skill</a></li>
       <li><a href="#project">Project</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </div> -->
+
+<nav class="navbar">
+    <div class="logo">My Portfolio</div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#skill">Skill</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </nav>
 
 
@@ -31,7 +47,8 @@
   <!-- hero section -->
   <div class="container">
     <div class="text-section">
-      <h1> Sahil Bhatt</h1>
+      <h1>  Hi, I am Sahil Bhatt, <br>
+        Creative Technologist</h1>
       <p>
         Motivated and detail-oriented BCA graduate with a solid foundation in computer applications, programming, and IT
         concepts. I am a passionate Frontend Developer with strong expertise in web development technologies such as
@@ -39,7 +56,7 @@
         engaging user experiences. With a problem-solving mindset and a drive to continuously learn, I aim to contribute
         to innovative projects and grow as a developer in the tech industry.
       </p>
-      <button><a href="final resume.pdf" class="btn" download="final_resume.pdf">Download Resume</a></button>
+      <Button><a href="final resume.pdf" class="btn" >Download Resume</a></Button>
     </div>
     <div class="image-section">
       <img src="image/my-photo.jpeg" alt="Profile Photo">
@@ -211,7 +228,14 @@
       menu.classList.toggle('active');
     }
   </script>
-
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      const menuToggle = document.getElementById('menuToggle');
+      navLinks.classList.toggle('active');
+      menuToggle.classList.toggle('active');
+    }
+  </script>
 </body>
 
 </html>
