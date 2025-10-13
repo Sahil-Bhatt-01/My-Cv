@@ -15,20 +15,18 @@
 </head>
 
 <body>
-  <!-- header section -->
-  <nav class="navbar">
-    <div class="menu-toggle" id="mobile-menu">
-      ☰
-    </div>
-    <ul class="menu">
-      <li><a href="#skill ">Skill</a></li>
-      <li><a href="#project">Project</a></li>
-      <li class="dropdown">
-        <a href="#contact">Contact </a>
 
-      </li>
+
+    <nav class="navbar">
+    <ul id="menu">
+      <li><a href="#skill">Skill</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
   </nav>
+
+
 
   <!-- hero section -->
   <div class="container">
@@ -200,13 +198,12 @@
       });
     });
 
-    const menuToggle = document.getElementById('mobile-menu');
-    const menu = document.getElementById('menu');
 
-    menuToggle.addEventListener('click', () => {
-      menu.classList.toggle('show');
-    });
 
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('active');
+    }
   </script>
 
 </body>
