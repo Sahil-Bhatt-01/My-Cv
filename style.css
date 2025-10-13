@@ -176,10 +176,10 @@ body {
   .nav-links {
     position: absolute;
     top: 70px;
-    right: -100%;
+    right: 20%;
     background: #111;
     flex-direction: column;
-    width: 200px;
+    width: 50px;
     text-align: center;
     padding: 20px 0;
     border-radius: 8px;
@@ -188,7 +188,7 @@ body {
   .nav-links.active {
     right: 0px;
         background: black;
-    width: 300px;
+    width: 198px;
   }
 
   .nav-links li {
